@@ -1,0 +1,788 @@
+{	
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/longin/longin",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+			
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/longin/longin",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+			
+		},
+		{
+            "path" : "pages/ordHome/ordHome",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单大厅",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongChenShiHall/gongChenShiHall",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "工程师大厅",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongying/gongying",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "供应产品",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/shangjiatuijie/shangjiatuijie",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商家推荐",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/sahngJiaInfor/sahngJiaInfor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商家介绍",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/yonghuWenDa/yonghuWenDa",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户问答",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/wendaInfor/wendaInfor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "问答详情",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/tiwen/tiwen",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我要提问",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/hangyeZhiXun/hangyeZhiXun",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "行业资讯",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/zhiXunInfor/zhiXunInfor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新闻",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/zhanghu/zhanghu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "账户信息",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/zhannei/zhannei",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "站内信",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/youjianDingYue/youjianDingYue",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "邮件订阅",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/youHuiJuan/youHuiJuan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的优惠卷",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/edPassword/edPassword",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修改密码",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/addDiZhi/addDiZhi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "收货地址",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/newDiZhi/newDiZhi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增地址",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/myInfor/myInfor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的资料",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/myord/myord",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/tuiKuan/tuiKuan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "退款售后",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/touShu/touShu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "投诉管理",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/allXunPan/allXunPan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "所有询盘",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/souCang/souCang",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "收藏产品",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/shochangGongYingShang/shochangGongYingShang",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "收藏供应商",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/juBaoGunanLi/juBaoGunanLi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "举报管理",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/jiFenZhongXing/jiFenZhongXing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "积分中心",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/edTuZhiOrd/edTuZhiOrd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理图纸订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/edBianCheng/edBianCheng",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理编程",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/shopCar/shopCar",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/goumaiChanPing/goumaiChanPing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购买产品",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuTuZhi/fabuTuZhi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布图纸",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuBianCheng/fabuBianCheng",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布编程",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/chuangJianXunPan/chuangJianXunPan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "创建询盘",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/zhuChe/zhuChe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "立即注册",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/ordInfor/ordInfor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情信息",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/userAdmin/userAdmin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户中心",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/WXbangDing/WXbangDing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "微信绑定",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/shopAdmin/shopAdmin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商家中心",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongChengShiAdmin/gongChengShiAdmin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "工程师中心",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuXunJIa/fabuXunJIa",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布询价订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongChengShiInfor/gongChengShiInfor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongChengShiNameRen/gongChengShiNameRen",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "实名认证",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/huaTuOrd/huaTuOrd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "接受画图订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/huaTuOrdAdmin/huaTuOrdAdmin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理画图订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/jieshouBianCheng/jieshouBianCheng",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "接受编程订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/jieshouBianchengAdmin/jieshouBianchengAdmin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理编程订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/tixianApply/tixianApply",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提现申请",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/Offspring/Offspring",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "子账号管理",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/shopYouZhiOrd/shopYouZhiOrd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "优质采购单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/allShopYouZhiOrd/allShopYouZhiOrd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "所有优质采购单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuChanPing/fabuChanPing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布产品",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/chanPingAdmin/chanPingAdmin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理产品",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuJournalism/fabuJournalism",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布新闻",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/adminJournalism/adminJournalism",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理新闻",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/zhaoping/zhaoping",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布招聘",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/allzhaoPing/allzhaoPing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "所有招聘",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/ershouProduct/ershouProduct",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布二手设备",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/findFactory/findFactory",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "找工厂",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/youzhiBianChen/youzhiBianChen",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "优质编程",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/tixianGuanLi/tixianGuanLi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人账户",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/tixianJiLu/tixianJiLu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提现记录",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/chanPingOrdAdmin/chanPingOrdAdmin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "产品订单管理",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/qiyeZhaoPing/qiyeZhaoPing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "企业招聘",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/zhaoPingInfor/zhaoPingInfor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/shousuo/shousuo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/sousuoList/sousuoList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索结果",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/youzhiCaiGou/youzhiCaiGou",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "优质采购",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/qiyeRenZhen/qiyeRenZhen",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "企业认证",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
