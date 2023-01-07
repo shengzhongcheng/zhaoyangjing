@@ -62,23 +62,23 @@
 			<u-gap :height="25"></u-gap>
 		</view>
 		<!-- 订单列表 -->
-		<view class="ordList" v-for="index in 5" :key="index">
+		<view class="ordList" v-for="(item,index) in youzhiord" :key="index">
 			<view class="listBoxLeft">
-				<image src="../../static/logo.png" mode=""></image>
+				<image :src="getimgsrc(item.img_arr[0])" mode=""></image>
 			</view>
 			<view class="listBoxright">
 				<u-gap :height="20"></u-gap>
-				<view class="name u-line-1">原照状也说的哈健康的哈发阿斯蒂芬生卡死</view>
+				<view class="name u-line-1">{{item.name}}</view>
 				<u-gap :height="20"></u-gap>
-				<view class="jieshao u-line-2">按时发手机客户端即可发撒发的发生的发生的阿斯顿发生的发生货的看法时觉得焕发健康电话费卡上的风景哈卡时间的恢复卡时间的恢复卡机</view>
+				<view class="jieshao u-line-2">{{item.remark}}</view>
 				<u-gap :height="35"></u-gap>
 				<view class="num">
-					<text class="nums">加工量：<text style="color: #1a90ff;">1000pcs</text></text> 
+					<text class="nums">加工量：<text style="color: #1a90ff;">{{item.num}}{{item.unit}}</text></text> 
 					<text class="liji" @tap="to_ordInfor">立即报价</text>
 				</view>
 			</view>
 		</view>
-		<view class="jiazai"><text>点击查看更多</text> </view>
+		<view class="jiazai" @tap="youzhiordAll" v-show="allShow"><text>点击查看更多</text> </view>
 		<u-gap :height="35" bg-color="#f5f5f5"></u-gap>
 		<!-- 热门采购 -->
 		<view>
@@ -218,7 +218,11 @@
 				</swiper-item>
 			</swiper>
 		</view>
+		
+		<!-- #ifdef H5 -->
 		<banquan></banquan>
+		<!-- #endif -->
+		
 		<!-- 返回顶部 -->
 		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<!-- 无网络提示 -->
@@ -304,15 +308,47 @@
 				//优秀图纸部分变量
 				currentYouxiu:0,
 				swiperCurrentYouxiu:0,
+				//优质订单列表
+				youzhiord:[],
+				youzhiPage:1,
+				limit:5,
+				allShow:true,
 			}
 		},
 		onLoad() {
-			
+			this.getordlist()
 		},
 		onPageScroll(e) {
 			this.scrollTop = e.scrollTop;
 		},
 		methods: {
+			/* 
+			
+			优质订单数据部分 
+			 
+			 */
+			//查看更多
+			youzhiordAll(){
+				if(this.youzhiord.length<this.youzhiPage*5)return this.allShow = false
+				this.youzhiPage++
+				this.getordlist()
+			},
+			
+			//优质订单列表
+			getordlist(){
+				this.$u.post('/api/v1/web/index/orderpanList',{
+					is_tui:'1',
+					limit:this.limit,
+					page:this.youzhiPage,
+				}).then(res =>{
+					this.youzhiord = [...this.youzhiord,...res.data.data]
+					// console.log(this.youzhiord)
+				})
+			},
+			
+			
+			
+			
 			//优质采购
 			to_youzhiCaiGou(){
 				uni.navigateTo({

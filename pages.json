@@ -3,6 +3,14 @@
 			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
 		{
 			"path" : "pages/longin/longin",
 			"style" :                                                                                    
@@ -12,13 +20,6 @@
 				"navigationStyle": "custom"
 			}
 			
-		},
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "首页",
-				"navigationStyle": "custom"
-			}
 		},
 		{
 			"path" : "pages/longin/longin",
@@ -771,6 +772,193 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "企业认证",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiZhiZi/gongShiZhiZi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公司资质",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiZhiZi/addzhizi/addzhizi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加资质",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiZhiZi/edzhizi/edzhizi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑资质",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiSheBei/gongShiSheBei",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公司设备",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiSheBei/addSheBei/addSheBei",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加设备",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiSheBei/edSheBei/edSheBei",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑设备",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiXiangChe/gongShiXiangChe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公司相册",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiXiangChe/xiangcheList/xiangcheList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "相册",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongShiXiangChe/addXiangChe/addXiangChe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑相册",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuXunJIa/adminXunJia/adminXunJia",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理询价单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuXunJIa/edXunJia/edXunJia",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑询价单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/chanPingAdmin/edChanPing/edChanPing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑产品",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuErShou/fabuErShou",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布二手产品",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuErShou/adminErShou/adminErShou",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理二手设备",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/fabuErShou/edErShou/edErShou",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑二手设备",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/edTuZhiOrd/bianjiTuZhiOrd/bianjiTuZhiOrd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑图纸订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#199bff",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/gongshiHome/gongshiHome",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公司主页",
                 "enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#199bff",
 				"navigationBarTextStyle": "white"

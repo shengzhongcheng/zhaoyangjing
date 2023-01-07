@@ -153,7 +153,7 @@
 						if(res.code == 1){
 							uni.setStorageSync('token',res.data.userinfo.token)
 							// uni.setStorageSync('user_id',res.data.userinfo.user_id)
-							uni.setStorageSync('nickname',res.data.userinfo.nickname)
+							// uni.setStorageSync('nickname',res.data.userinfo.nickname)
 							uni.setStorageSync('group_id',res.data.userinfo.group_id)
 							this.$u.toast('登录成功');
 							setTimeout(()=>{

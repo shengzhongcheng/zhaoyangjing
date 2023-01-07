@@ -8,20 +8,20 @@ import uView from "uview-ui";
 Vue.use(uView);
 
 // 引入store
-import store from '@/store';
+// import store from '@/store';
 
 // 引入uView提供的对vuex的简写法文件
-let vuexStore = require('@/store/$u.mixin.js');
-Vue.mixin(vuexStore);
+// let vuexStore = require('@/store/$u.mixin.js');
+// Vue.mixin(vuexStore);
 
-
+Vue.prototype.actionUrl = 'http://192.168.1.3:8011/api/common/upload'
 //给图片路径添加路径
 Vue.prototype.getimgsrc = function(url){
 	let urlk = url;
 	let str = RegExp('http');
 	let newUrl;
 	//通过三元运算符进行判断该图片是否含有http域名，没有就拼接上去https://xcx.yichedi.com/
-	str.test(urlk) ? newUrl = urlk : newUrl = 'http://192.168.1.11:8011/' + urlk;
+	str.test(urlk) ? newUrl = urlk : newUrl = 'http://192.168.1.3:8011' + urlk;
 	const urls = newUrl
 	return urls
 }
@@ -48,7 +48,7 @@ import { createSSRApp } from 'vue'
 export function createApp() {
   const app = createSSRApp(App)
   return {
-	store,
+	// store,
     app
   }
 }

@@ -16,14 +16,14 @@
 			<view class="title" >公司信息</view>
 		</view>
 		<view class="list">
-			<view class="" >我的主页</view>
+			<view class="" @tap="gongshiHome">我的主页</view>
 			<view class="" @tap="to_qiyerenzhen">企业认证</view>
-			<view class="" >公司资源</view>
+			<view class="" @tap="gongshizhizi">公司资质</view>
 		</view>
 		<view class="list">
-			<view class="" >公司设备</view>
-			<view class="" >企业地图</view>
-			<view class="" >公司相册</view>
+			<view class="" @tap="gongShiSheBei">公司设备</view>
+			<!-- <view class="" >企业地图</view> -->
+			<view class="" @tap="gongshixiangche">公司相册</view>
 		</view>
 		<view class="userxingxi">
 			<view class="title">我的询价单</view>
@@ -118,8 +118,8 @@
 			<view class="title" >二手设备</view>
 		</view>
 		<view class="list">
-			<view class="" >发布二手设备</view>
-			<view class="" >管理二手设备</view>
+			<view class="" @tap="fabuerhsou">发布二手设备</view>
+			<view class="" @tap="adminershou">管理二手设备</view>
 		</view>
 		<u-gap :height="90"></u-gap>
 	</view>
@@ -133,6 +133,42 @@
 			}
 		},
 		methods: {
+			//公司主页
+			gongshiHome(){
+				uni.navigateTo({
+					url:'../gongshiHome/gongshiHome'
+				})
+			},
+			//管理二手设备
+			adminershou(){
+				uni.navigateTo({
+					url:'../fabuErShou/adminErShou/adminErShou'
+				})
+			},
+			//发布二手设备
+			fabuerhsou(){
+				uni.navigateTo({
+					url:'../fabuErShou/fabuErShou'
+				})
+			},
+			//公司相册
+			gongshixiangche(){
+				uni.navigateTo({
+					url:'../gongShiXiangChe/gongShiXiangChe'
+				})
+			},
+			//公司设备
+			gongShiSheBei(){
+				uni.navigateTo({
+					url:'../gongShiSheBei/gongShiSheBei'
+				})
+			},
+			//公司资质
+			gongshizhizi(){
+				uni.navigateTo({
+					url:"../gongShiZhiZi/gongShiZhiZi"
+				})
+			},
 			//企业认证
 			to_qiyerenzhen(){
 				uni.navigateTo({
@@ -253,10 +289,10 @@
 					url:'/pages/shopYouZhiOrd/shopYouZhiOrd'
 				})
 			},
-			//所有询盘
+			//管理询价单
 			to_allXunPan(){
 				uni.navigateTo({
-					url:'/pages/allXunPan/allXunPan'
+					url:'../fabuXunJIa/adminXunJia/adminXunJia'
 				})
 			},
 			//子代管理
@@ -268,7 +304,7 @@
 			//询价订单
 			to_chuangJianXunPan(){
 				uni.navigateTo({
-					url:'/pages/chuangJianXunPan/chuangJianXunPan'
+					url:'../fabuXunJIa/fabuXunJIa'
 				})
 			},
 			//绑定微信

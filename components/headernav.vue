@@ -18,7 +18,7 @@
 					</view>
 					<view class="user" >
 						<!-- <view class="headimg"><u-avatar src="" size="70"></u-avatar></view> -->
-						<view class="username" @click="login" v-if="logins">请先登录</view>
+						<!-- <view class="username" @click="login" v-if="logins">请先登录</view> -->
 					</view>
 					<view class="userZxing">
 						<view class="name" @tap="to_index">首页<u-icon name="arrow-right" color="#757575" size="28"></u-icon></view>
